@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shopper's Mart</title>
+        <link rel="stylesheet" href="C:\Users\Admin\OneDrive\Documents\style.css">
+    </head>
+    <body>
+    <div class="top-container">
+        <h2><a href="https://dakshjaiman.github.io/syl/" target="_blank" class="Please-Select-Your-Location">Please,<br>Select Your Location</a></h2>
+        <div class="container">
+            <input id="search-bar" type="text" class="search-bar">
+            <button class="buttons">Search</button>
+        </div>
+        <img src="Logo.png" alt="logo" class="logo">
+        <img src="Picture-3.png" alt="Flag" class="Flag">
+        <img src="avatar.png" alt="avatar" class="avatar">
+    </div>
+    <div class="nav">
+        <img src="mobiles.webp" alt="Mobiles" class="mobiles">
+        <img src="women.webp" alt="Women" class="women">
+        <img src="men.webp" alt="Men" class="men">
+        <img src="kids.webp" alt="Kids" class="kids">
+        <img src="beauty.webp" alt="Beauty" class="beauty">
+        <img src="home.webp" alt="Home" class="home">
+        <img src="large.webp" alt="Large" class="large">
+        <img src="electronics.webp" alt="Electronics" class="electronics">
+        <img src="food.webp" alt="Food" class="food">
+        <h3 class="h3-1">Mobiles</h3>
+        <h3 class="h3-2">Women</h3>
+        <h3 class="h3-3">Men</h3>
+        <h3 class="h3-4">Kids</h3>
+        <h3 class="h3-5">Beauty</h3>
+        <h3 class="h3-6">Home & Furniture</h3>
+        <h3 class="h3-7">Large</h3>
+        <h3 class="h3-8">Electronics</h3>
+        <h3 class="h3-9">Food, Sports, Soap etc</h3>
+        <h2 class="h2-2">More Products<br>Coming Soon</h2>
+    </div>
+    <div class="middle-container">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="Picture.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Picture-1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Picture-2.jpg" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); 
+        }
+        </script>
+        <img src="Picture-4.png" alt="Picture-4" class="picture-4">
+        <img src="Picture-5.png" alt="Picture-5" class="picture-5">
+        <img src="Picture-6.png" alt="Picture-6" class="picture-6">
+        <img src="Picture-7.png" alt="Picture-7" class="picture-7">
+        </div>
+    <div class="container-2">
+        <h3 class="h2-10">Sign in,<br>For Your Best Experiance</h3>
+    </div>
+        <button onclick="document.getElementById('id01').style.display='block'" class="Login-button">Login</button>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="avatar.png" alt="Avatar" class="avatar-2">
+    </div>
+
+    <div class="container-3">
+      <label for="uname" class="Username"><b>Username</b></label>
+      <input type="text" name="uname" class="Username-2" required>
+
+      <label for="psw" class="Password"><b>Password</b></label>
+      <input type="password" name="psw" class="Password-2" required>
+
+      <button type="submit" class="Login-button-2">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container-4" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" class="FP"><a href="#">Forgot password?</a></span>
+      <script>
+        var modal = document.getElementById('id01');
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    </div>
+  </form>
+</div>
+    <div class="container-5">
+      <iframe class="Iphone-13" src="https://www.youtube.com/embed/m43rh-pI0P0"
+      poster="Iphone 13.png">
+      </iframe>
+        <h1 class="h1">New<br>Products</h1>
+        <iframe class="Iphone-13-pro" src="https://www.youtube.com/embed/XKfgdkcIUxw">
+        </iframe>
+          </div>
+          <style>
+            .container {
+    background-color: #181c24;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+    bottom: 99px;
+    width: 1247px;
+}
+
+.nav {
+    background-color: #131921;
+    height: 120px;
+    width: 1247px;
+    position: relative;
+    bottom: 180px;
+}
+
+.last-div {
+    background-color: #131921;
+    height:120px ;
+    width: 1247px;
+    position: relative;
+    bottom: 350px;
+    padding: 0;
+}
+
+body {
+    background-color: #ff99cc;
+    animation-name: dark;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    overflow: none;
+    overflow-x: hidden;
+}
+
+@keyframes dark {
+    from {background-color: #ff99cc;}
+    to {background-color: #33ccff;}
+
+}
+
+.logo {
+    height: 80px;
+    width: 190px;
+    position: relative;
+    bottom: 190px;
+}
+
+.search-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 50px;
+    height: 44px;
+    border: 1px solid #dddddd;
+    outline: none;
+    padding-left: 40px;
+    position: relative;
+    right: 10px;
+    top: 29px;
+}
+
+.buttons {
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 220px;
+    height: 48px;
+    bottom: 39px;
+}
+
+.container {
+    text-align: center;
+}
+
+.Flag {
+    height: 80px;
+    width: 120px;
+    position: relative;
+    bottom: 187px;
+    left: 750px;
+}
+
+.picture-4 {
+    position: relative;
+    left: 50px;
+    width: 270px;
+    bottom: 201px;
+    height: 392px;
+}
+
+.picture-5 {
+    position: relative;
+    bottom: 201.8px;
+    left: 70px;
+    width: 275px;
+}
+
+.picture-6 {
+    position: relative;
+    bottom: 203px;
+    left: 90px;
+    width: 270px;
+}
+
+.picture-7 {
+    position: relative;
+    bottom: 202px;
+    left: 110px;
+    width: 270px;
+}
+
+.container-2 {
+    height: 130px;
+    width: 270px;
+    background-color: white;
+    position: relative;
+    bottom: 615.5px;
+    left: 937px;
+}
+
+.Iphone-13 {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    height: 280px;
+    width: 475px;
+    top: 10px;
+    border: none;
+}
+
+.h1 {
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Iphone-13-pro {
+    position: relative;
+    cursor: pointer;
+    left: 672px;
+    bottom: 390px;
+    height: 280px;
+    width: 475px;
+    border: none;
+}
+
+.avatar {
+    position: relative;
+    bottom: 200px;
+    width: 50px;
+    left: 800px;
+    border-radius: 50%;
+}
+
+.mobiles {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.women {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 41px;
+    top: 5px;
+}
+
+.men {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 62px;
+    top: 5px;
+}
+
+.kids {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 75px;
+    top: 5px;
+}
+
+.beauty {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 90px;
+    top: 5px;
+}
+
+.home {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 135px;
+    top: 5px;
+}
+
+.large {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 215px;
+    top: 5px;
+}
+
+.electronics {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 250px;
+    top: 5px;
+}
+
+.food {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 370px;
+    top: 5px;
+}
+
+.h3-1 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    left: 16px;
+    bottom: 6px;
+}
+
+.h3-2 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 46px;
+    left: 105px;
+}
+
+.h3-3 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 86px;
+    left: 203px;
+}
+
+.h3-4 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 126px;
+    left: 277px;
+}
+
+.h3-5 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 166px;
+    left: 345px;
+}
+
+.h3-6 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 205.8px;
+    left: 424px;
+}
+
+.h3-7 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 246px;
+    left: 603px;
+}
+
+.h3-8 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 286px;
+    left: 685px;
+}
+
+.h3-9 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 327px;
+    left: 810px;
+}
+
+.h2-2 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 415px;
+    left: 1040px;
+    text-decoration: none;
+}
+
+.h2-1 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    bottom: 435px;
+    left: 1050px;
+}
+
+.sign-in {
+    background-color: white;
+    position: relative;
+    left: 937px;
+    bottom: 763px;
+    height: 130px;
+    width: 270px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h2-10 {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    text-decoration: none;
+    left: 10px;
+    top: 10px;
+}
+
+.Login-button {
+    height: 40px;
+    width: 220px;
+    color: black;
+    background-color: rgb(241, 218, 6);
+    border: 4px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 5%;
+    position: relative;
+    left: 962px;
+    text-decoration: bold;
+    bottom: 670px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: scroll;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 20px;
+  }
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.form {
+    border: 3px solid #f1f1f1;
+}
+  
+.input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.span.uname {
+    float: right;
+    padding-top: 16px;
+}
+  
+.button:hover {
+    opacity: 0.8;
+}
+  
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border: none;
+    position: relative;
+    right: 0.5px;
+    top: 0.5px;
+    cursor: pointer;
+}
+  
+.container-3 {
+    text-align: center;
+    margin: 48px 12px 24px 12px;
+}
+  
+.avatar-2 {
+    width: 40%;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 200px;
+}
+  
+.container-4 {
+    padding: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+  
+.span.psw {
+    float: right;
+    padding-top: 16px;
+    text-decoration: none;
+}
+  
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+}
+
+.Username {
+    position: relative;
+    bottom: 35px;
+    right: 261.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Username-2 {
+    height: 39px;
+    width: 593px;
+    position: relative;
+    bottom: 35px;
+    border: 1px solid #ccc;
+}
+
+.Password {
+    position: relative;
+    bottom: 22px;
+    right: 261.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Password-2 {
+    position: relative;
+    bottom: 30px;
+    height: 39px;
+    width: 593px;
+}
+
+.Login-button-2 {
+    height: 40px;
+    width: 600px;
+    color: black;
+    background-color: rgb(241, 218, 6);
+    border: 4px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 5%;
+    position: relative;
+    bottom: 25px;
+    text-decoration: bold;
+}
+
+.remember {
+    position: relative;
+    bottom: 67px;
+    right: 3.5px;
+}
+
+.remember-2 {
+    position: relative;
+    left: 20px;
+    bottom: 104px;
+}
+
+.nav-bottom {
+    background-color: white;
+    position: relative;
+    width: 1155px;
+    height: 300px;
+    left: 48px;
+    bottom: 472px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+    bottom: 50px;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+ @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.container-5 {
+    background-color: white;
+    width: 1158px;
+    height: 300px;
+    position: relative;
+    left: 50px;
+    bottom: 373px;
+}
+
+.slideshow-container {
+    max-width: 1600px;
+    position: relative;
+    margin: auto;
+    bottom: 180px;
+}
+  
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    left: 60px;
+}
+  
+.active {
+    background-color: #717171;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+          </style>
+    </body>
+    </html>
